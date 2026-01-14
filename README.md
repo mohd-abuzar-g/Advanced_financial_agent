@@ -1,24 +1,28 @@
-# Advanced Travel Agent
-Advanced Travel Agent is an AI-powered travel planning application built with **Streamlit**, **OpenRouter (Gemini Flash)**, and **Serper.dev**.  
-It generates full multi-day itineraries based on user preferences, travel style, and destination, including essential travel information and calendar integration.
+# Advanced Financial Agent
+
+Advanced Financial Agent is an AI-powered system designed for **real-time stock analysis, market sentiment detection, and financial insights**.  
+It uses live financial data and AI reasoning to generate professional reports and recommendations for any stock symbol.
 
 ---
 
-🚀 Features
-🧠 AI-Generated Itineraries
-- Generates detailed day-by-day travel plans (1–14 days)  
-- Supports travel styles: **Balanced, Luxury, Budget, Adventure**  
-- Integrates weather, visa rules, and local tips  
-- Uses **OpenRouter LLM models** for AI reasoning  
- 🌍 Real-Time Search
-- Integrates **Serper.dev** for fetching live travel info  
-- Provides context on top attractions, weather forecasts, and visa requirements  
- 📅 Calendar Integration
-- Exports itinerary as **.ics file** for Google, Apple, or Outlook Calendar  
- 🖥️ Modern UI
-- Built with **Streamlit** for interactive, clean user experience  
-- Sidebar inputs for arrival date, travel style, and search mode  
-- Multi-chunk itinerary generation for flexible planning  
+## 🚀 Features
+
+### 📈 Real-Time Stock Analysis
+- Fetches current stock data including price, market cap, PE ratios, 52-week high, dividend yield, and sector  
+- Detects market mood as **Bullish** or **Bearish** using AI reasoning  
+
+### 🤖 AI-Powered Financial Reports
+- Uses **OpenRouter-compatible AI models** (DeepSeek, Gemini Flash) for professional interpretation  
+- Generates executive summary, bull case, bear case, and final verdict  
+- Supports multiple stock tickers in one query  
+
+### 📰 News Integration
+- Fetches recent news using **NewsAPI** (optional) or DuckDuckGo  
+- Provides context for AI analysis, helping detect market trends  
+
+### 🗨️ Interactive Query System
+- Users can input any stock ticker and get **structured, real-time insights**  
+- Fully conversational AI-driven analysis  
 
 ---
 
@@ -26,52 +30,56 @@ It generates full multi-day itineraries based on user preferences, travel style,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/<your-username>/Advanced_travel_agent.git
+git clone https://github.com/<your-username>/Advanced_financial_agent.git
 ```
 
 2. Navigate into the project folder:
 ```bash
-cd Advanced_travel_agent
+cd Advanced_financial_agent
 ```
 
-3. Install the required packages:
+3. Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
 
- ▶️ Usage
+---
 
-Run the app:
+## ▶️ Usage
+
+Run the application:
 
 ```bash
-streamlit run Advanced_travel_agent.py
-```
-- Enter your **OpenRouter API Key** and **Serper.dev API Key** in the sidebar  
-- Input **destination**, **number of days**, **travel style**, and **arrival date**  
-- Click **Generate Plan**  
-- Download the itinerary as a **.ics calendar file**  
-
-
-
-🗂 Project Structure
-
-```
-Advanced_travel_agent/
-│── Advanced_travel_agent.py       # Main Streamlit application
-│── README.md                     # Project description
-│── requirements.txt              # Python dependencies
+streamlit run app.py
 ```
 
-
- 🔑 API Keys
-OpenRouter API Key** – Required for AI reasoning  
-Serper.dev API Key** – Required for live search  
-
-**No keys are hardcoded in the repository** — safe to publish on GitHub.
+- Enter your **OpenRouter API Key** in the sidebar  
+- Optionally, enter a **NewsAPI Key** for enhanced news-based insights  
+- Enter one or more **stock tickers** (e.g., NVDA, TSLA)  
+- Click **Start Analysis** to get AI-generated reports  
 
 ---
 
- 📄 License
+## 🗂 Project Structure
+
+```
+Advanced_financial_agent/
+│── finance_agent.py        # Main Streamlit application
+│── README.md               # Project description
+│── requirements.txt        # Python dependencies
+```
+
+---
+
+## 🔑 API Keys
+
+- **OpenRouter API Key** – Required for AI reasoning  
+- **NewsAPI Key** (optional) – For fetching news headlines; if not provided, the system uses DuckDuckGo  
+
+**No API keys are hardcoded** — safe to publish on GitHub.
+
+---
+
+## 📄 License
 
 This project is for educational and personal use.
-
