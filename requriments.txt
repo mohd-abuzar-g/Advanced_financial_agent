@@ -1,0 +1,6 @@
+streamlit
+yfinance
+pandas
+agno
+requests
+duckduckgo-search
